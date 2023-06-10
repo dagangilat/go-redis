@@ -1,5 +1,5 @@
 # Go-Redis Key-Value Store
-This project implements a simple key-value store with a REST API, using Go and Redis.
+This project implements a simple key-value store with a REST API, using Go
 
 ## Features
 - Set key-value pairs
@@ -7,7 +7,6 @@ This project implements a simple key-value store with a REST API, using Go and R
 
 ## Prerequisites
 - [Go](https://golang.org/dl/) (1.16 or later)
-- [Redis](https://redis.io/download) (6.0 or later)
 
 ## Getting Started
 1. Clone the repository:
@@ -21,12 +20,7 @@ This project implements a simple key-value store with a REST API, using Go and R
     go mod tidy
     ```
 
-3. Start the Redis server (you may need to adjust this command depending on your Redis installation):
-    ```bash
-    redis-server
-    ```
-
-4. Run the Go server:
+3. Run the Go server:
     ```bash
     go run main.go
     ```

@@ -62,7 +62,7 @@ func main() {
 	// Register the handler functions for the routes
 	r.HandleFunc("/set", setHandler).Methods("POST")
 	r.HandleFunc("/get/{key}", getHandler).Methods("GET")
-	// Print a message to the terminal
+	// Print REDIS server start message to the terminal
 	fmt.Println("Starting REDIS server on port 8000")
 
 	// Start the HTTP server and listen on port 8000

@@ -63,9 +63,9 @@ func main() {
 	r.HandleFunc("/set", setHandler).Methods("POST")
 	r.HandleFunc("/get/{key}", getHandler).Methods("GET")
 	// Print REDIS server start message to the terminal
-	fmt.Println("Starting REDIS server on port 8000")
+	fmt.Println("Starting REDIS server on port 8001")
 
 	// Start the HTTP server and listen on port 8000
 	// If there is an error, log the error and exit
-	log.Fatal(http.ListenAndServe(":8000", r))
+	log.Fatal(http.ListenAndServe(":8001", r))
 }
